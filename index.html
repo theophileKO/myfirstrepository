@@ -5,52 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Theo Ossinga's Portfolio</title>
     <style>
-        /* Global Styles */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
             color: #333;
-            background-color: #f4f4f4;
+            background-color: #efeee7;
         }
-
-        header, section {
+        header {
+            background-color: #333333;
+            color: #eee;
             padding: 20px;
             text-align: center;
         }
-
-        /* Header Styling */
-        header h1 {
-            margin: 0;
-            color: #4A90E2;
+        .container {
+            width: 1024px;
+            margin: 0 auto;
         }
-
-        header p {
-            font-style: italic;
-            color: #666;
+        #bio-image, #main-bio, #contact-info {
+            float: left;
         }
-
-        /* Image Section */
-        #image img {
-            width: 100%;
-            height: auto;
-            display: block;
-            margin: auto;
+        #bio-image {
+            width: 200px;
+            margin-right: 20px; /* Adjust margin as needed */
         }
-
-        /* About Section */
-        #about {
-            background-color: #fff;
-            border: 1px solid #ddd;
-            margin: 20px 0;
+        #main-bio {
+            width: 70%;
         }
-
-        /* Skills Section */
+        #contact-info {
+            width: 30%;
+            line-height: 1.5;
+        }
         #skills ul {
             list-style: none;
             padding: 0;
         }
-
         #skills li {
             background-color: #eee;
             border: 1px solid #ddd;
@@ -58,9 +47,10 @@
             padding: 10px;
             font-size: 0.9em;
         }
-
-        /* Responsive Design */
         @media (max-width: 600px) {
+            .container {
+                width: auto;
+            }
             header h1, header p, #about h2, #skills h2 {
                 font-size: 1.2em;
             }
@@ -72,26 +62,35 @@
         <h1>Theo Ossinga</h1>
         <p>Digital Craftsman</p>
     </header>
-    <section id="image">
-        <img src="sky_image.png" alt="Clear Blue Sky">
-    </section>
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Developing Solutions for Endeavours.</p>
-    </section>
-    <section id="skills">
-        <h2>Skills</h2>
-        <ul>
-            <li><strong>Marketing Technology Expertise:</strong> CMS, CRM, Email Marketing, Analytics Platforms, Marketing Automation Tools</li>
-            <li><strong>Project Management:</strong> Agile, Waterfall, Workfront</li>
-            <li><strong>Storytelling:</strong> Content Creation, Content Strategy, Presentation Skills, Video Campaign Development</li>
-            <li><strong>Communication:</strong> Executive Presence, Stakeholder Management, Negotiation</li>
-            <li><strong>Collaboration:</strong> Virtual Teams, Matrixed Organizations</li>
-            <li><strong>Technical Skills:</strong> AI/NLP, Data Analysis, Web Development</li>
-            <li><strong>Business Development:</strong> Strategic Partnerships, Market Analysis, Revenue Growth</li>
-            <li><strong>Leadership:</strong> Team Management, Mentorship, Performance Coaching</li>
-        </ul>
-    </section>
+    <div class="container">
+        <section id="bio-image">
+            <img src="tko.jpeg" alt="Theo Ossinga">
+        </section>
+        <section id="main-bio">
+            <h2>About Me</h2>
+            <p>As a Digital Growth Specialist with experience in Digital Innovation, Prototyping, Event Management, Storytelling, Business Development; I present a unique blend of skills that have shaped my craft.</p>
+            <p>I leverage my expertise in strategic planning, project management, and creative problem-solving to deliver innovative solutions that meet the unique needs of clients and stakeholders.</p>
+            <p>At the core of my work is a deep commitment to storytelling and the power of narrative to inspire, educate, and engage audiences. I believe that effective digital experiences should be built on a foundation of compelling storytelling, supported by data-driven insights, and a focus on user experience.</p>
+        </section>
+        <section id="contact-info">
+            <h2>Contact Information</h2>
+            <p>Email: <a href="mailto:hello@theophileossinga.com">hello@theophileossinga.com</a></p>
+            <p>Phone: 314-415-0014</p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/theophileossinga/">theophileossinga</a></p>
+        </section>
+        <section id="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li><strong>Marketing Technology Expertise:</strong> CMS, CRM, Email Marketing, Analytics Platforms, Marketing Automation Tools</li>
+                <li><strong>Project Management:</strong> Agile, Waterfall, Workfront</li>
+                <li><strong>Storytelling:</strong> Content Creation, Content Strategy, Presentation Skills, Video Campaign Development</li>
+                <li><strong>Communication:</strong> Executive Presence, Stakeholder Management, Negotiation</li>
+                <li><strong>Collaboration:</strong> Virtual Teams, Matrixed Organizations</li>
+                <li><strong>Technical Skills:</strong> AI/NLP, Data Analysis, Web Development</li>
+                <li><strong>Business Development:</strong> Strategic Partnerships, Market Analysis, Revenue Growth</li>
+                <li><strong>Leadership:</strong> Team Management, Mentorship, Performance Coaching</li>
+            </ul>
+        </section>
+    </div>
 </body>
 </html>
-
