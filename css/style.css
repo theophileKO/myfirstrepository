@@ -1,0 +1,97 @@
+body {
+    background-color: #efeee7;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    color: #333333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333333;
+    text-align: center;
+    padding: 20px 0;
+}
+
+header h1 {
+    color: #eee;
+    font-size: 28px;
+    margin: 0;
+}
+
+header p {
+    color: #eee;
+    font-style: italic;
+    margin: 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
+    overflow: hidden; /* Clear floats */
+}
+
+#bio-image {
+    float: left;
+    width: 200px;
+    margin-right: 20px;
+    display: block;
+}
+
+#main-bio, #contact-info {
+    float: left;
+    box-sizing: border-box; /* Include padding and borders in element's width */
+}
+
+#main-bio {
+    width: 70%;
+    padding-right: 20px;
+}
+
+#contact-info {
+    width: 30%;
+    line-height: 1.5;
+}
+
+#skills ul {
+    list-style: none;
+    padding: 0;
+}
+
+#skills li {
+    background-color: #eee;
+    border: 1px solid #ddd;
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 0.9em;
+}
+
+a {
+    color: #d21034;
+    text-decoration: none; /* Removes underline from links */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1, header p {
+        font-size: 24px;
+    }
+
+    #bio-image, #main-bio, #contact-info {
+        float: none;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+
+    #bio-image {
+        margin: 0 auto 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1, header p {
+        font-size: 20px;
+    }
+}
